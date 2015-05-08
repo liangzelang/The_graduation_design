@@ -472,6 +472,12 @@ SL6=L6/L;
 SW1=W1/W2;
 SW2=W2/W;
 
+if mode_flag==1  % 如果是注册模式（1）
+    sl
+elseif
+    
+end
+
 
 
 

@@ -23,7 +23,7 @@ End_flag=0;
 end_flag=0;
 rule_flag=0;
 
-ii=imread('F:\梁泽浪\毕业设计\毕业设计二期工作（算法设计，验证，硬件平台了解）\算法处理验证图库\72\10.bmp');%F:\梁泽浪\毕业设计\毕业设计二期工作（算法设计，验证，硬件平台了解）\算法处理验证图库\72\
+ii=imread('F:\梁泽浪\毕业设计\毕业设计二期工作（算法设计，验证，硬件平台了解）\算法处理验证图库\72\12.bmp');%F:\梁泽浪\毕业设计\毕业设计二期工作（算法设计，验证，硬件平台了解）\算法处理验证图库\72\
 i=imrotate(ii,-90);
 j=rgb2gray(i);   %取得图像的灰度图
 bw_level=graythresh(j)
@@ -458,7 +458,10 @@ W2=sqrt((finger_middle_x(1)-finger_middle_x(2))^2+(finger_middle_y(1)-finger_mid
 
 
 
-L=L1+L2+L3+L4+L5+L6;
+L=(L1+L2+L3+L4+L5+L6)/6.0;
+
+W=(W1+W2)/2.0;
+
 SL1=L1/L2;
 SL2=L2/L3;
 SL3=L3/L4;
@@ -466,9 +469,14 @@ SL4=L4/L5;
 SL5=L5/L6;
 SL6=L6/L;
 
-W=W1+W2)
 SW1=W1/W2;
 SW2=W2/W;
+
+if mode_flag==1  % 如果是注册模式（1）
+    sl
+elseif
+    
+end
 
 
 
